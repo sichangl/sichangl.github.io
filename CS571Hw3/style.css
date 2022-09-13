@@ -1,0 +1,36 @@
+             h1 {
+       			    text-align: center;
+                font-size : 60px;
+			          margin-bottom : 10px;
+                font-family: 'Times New Roman', Times, serif;
+    			   }	
+             .title{
+                width: 1200px;
+                height: 130px;
+                padding: 15px;
+                border: 2px solid black;
+                margin: 0 auto 20px auto;
+                text-align : center;
+              }
+            .end {
+                margin: 10px auto;
+                text-align : center;
+              }
+              .img_style {
+                display : block;
+                margin : 10px auto;
+                width : 1500px;
+                height : 900px;
+              }
+           	.icon_style {
+              	 width : 20px;
+              	 height :20px;
+            	}
+               a {
+                color : gray; 
+	              text-decoration : none;
+	            	margin : 15px;
+    		      }
+	          	a:hover {
+			            color : black;
+		          }
