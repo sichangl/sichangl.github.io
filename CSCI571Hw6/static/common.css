@@ -1,0 +1,270 @@
+body {
+    background: gray;
+}
+
+.banner {
+    background-image: url('banner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    border: 1px solid black;
+    width: 600px;
+    margin: 0 auto;
+    color: white;
+}
+
+.banner #title {
+    width:400px;
+    height: 60px;
+    position: center;
+    display: inline-block;
+    padding-left : 50px;
+}
+.banner #title h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner #subtitle {
+    width : 900px;
+    display: inline-block;
+    padding-left : 50px;
+}
+.banner #subtitle h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.content {
+    border: 1px solid black;
+    width: 600px;
+    margin: 0 auto;
+    height: 250px;
+    background: white;
+}
+
+.content .left {
+    padding-left: 50px;
+    display: inline-block;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.content .start {
+    color: red;
+    display: inline-block;
+}
+
+.content .keyWordText {
+    margin-left: 50px;
+    width: 500px;
+}
+
+.content .right {
+    display: inline-block;
+    padding-left: 150px;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.content .distanceText {
+    margin-left: 50px;
+    width: 150px;
+}
+
+.content .categoryText {
+    display: inline-block;
+    padding-left: 102px;
+}
+
+.content .categoryText #sel{
+    width: 200px;
+}
+
+.content .locationText {
+    margin-left: 50px;
+    width: 500px;
+    background-color: lightsteelblue;
+}
+
+.content hr {
+    width: 500px;
+    height: 1px;
+    background: blue;
+}
+
+.content .check {
+    display: inline-block;
+    margin: 0;
+}
+
+.content .control {
+    margin-top: 20px ;
+    padding-left: 50px;
+}
+
+.content .sub {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+}
+
+.content .clr {
+    display: inline-block;
+    background-color: gold;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+}
+
+.result {
+    width: 1400px;
+    margin: 0 auto;
+    visibility: hidden;
+    background: white;
+}
+
+.result table {
+    width: 1400px;
+    border: 1px solid black;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.result thead {
+    background: cornflowerblue;
+    height: 80px;
+}
+
+.result #resTitle #businessName{
+    width: 250px;
+}
+
+.result .restDetail1 {
+    cursor: pointer;
+}
+
+.result .sortTag {
+    cursor: pointer;
+}
+
+.result .restDetail:hover {
+    color: #C4C4C4;
+}
+
+.result .restDetail1:hover {
+    color: #C4C4C4;
+}
+
+
+.result .tableBody td{
+    text-align: center;
+}
+
+.businessDetail {
+    width: 1400px;
+    margin: 0 auto;
+    background: white;
+}
+
+.businessDetail #businessTitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.businessDetail hr {
+    width: 1000px;
+    color: gray;
+    height: 100px;
+    padding-left: 1.2px;
+    padding-right: 1.2px;
+    padding-bottom: 1.2px;
+}
+
+.businessDetail .line {
+    width: 1300px;
+    padding-left: 30px;
+    background-color: #C4C4C4;
+    border: 1px solid #C4C4C4;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.businessDetail table{
+    width: 1400px;
+    margin: 0 auto;
+    padding-left: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.businessDetail table td {
+    width: 50%;
+}
+
+.businessDetail table .boldBlack{
+    font-weight: 650;
+    font-size: 30px;
+}
+
+.businessDetail table  div{
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.businessDetail table .lightBlack{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    height: 30px;
+}
+
+.businessDetail .imgDiv {
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.businessDetail .imgDiv div {
+    width: 32%;
+    height: 600px;
+    display: inline-block;
+    border: 1px solid #C4C4C4;
+    margin-right: 10px;
+}
+
+.businessDetail .imgDiv .restImg {
+    width: 100%;
+    height: 80%;
+}
+
+.businessDetail .imgDiv .info {
+    height: 20px;
+    margin-top: 85px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border: none;
+}
+
+.businessDetail #emptyDiv{
+    width: 1400px;
+    height: 100px;
+    margin: 0 auto;
+    background: white;
+}

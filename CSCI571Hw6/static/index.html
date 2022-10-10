@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My WebSite</title>
+    <link rel="stylesheet" type = "text/css" href="./common.css">
+</head>
+<body>
+    <div id = "page">
+        <div class = "banner">
+            <div id = "title"><h1>Business Search</h1></div>
+            <div id = "subtitle"> <h2>Fill out the form to get business near you!</h2> </div>
+        </div>
+        <div class = "content">
+            <div class="left">KeyWord</div>
+            <div class="start">*</div>
+            <br/>
+            <form><input  class="keyWordText" id="keyWord" />
+            <br/>
+            <div class = "left">Distance(miles)</div>
+            <div class = "right">Category</div>
+            <div class="start">*</div>
+            <br/>
+            <input type="text" class="distanceText" id="distance" />
+            <div class = "categoryText">
+                <select id="sel">
+                    <option value="default">Default</option>
+                    <option value="Arts & Entertainment">Arts & Entertainment</option>
+                    <option value="Health & Medical">Health & Medical</option>
+                    <option value="Hotels & Travel">Hotels & Travel</option>
+                    <option value="Food">Food</option>
+                    <option value="Professional Services">Professional Services</option>
+                </select>
+            </div>
+            </br>
+            <div class = "left" >Location</div>
+            </br>
+            <input type="text" class="locationText" id="location" />
+            <hr/>
+            <div class = "left">Wants to auto-detect your location?Check here</div>
+            <input type="checkbox" class="check" id="checkBox" value="false" onclick="autoDetectSelected()" >
+            </br>
+            <div class="control">
+                <button name="button" class="sub" onclick="searchYelp()">SUBMIT</button>
+                <button name="button" class="clr" onclick="clearData()">CLEAR</button>
+            </div> </form>
+        </div>
+    </div>
+
+    <div class="result" id="searchResult">
+
+    </div>
+    <div class="businessDetail" id="detail">
+
+    </div>
+    <script src="./myJs.js"></script>
+</body>
+</html>
+
