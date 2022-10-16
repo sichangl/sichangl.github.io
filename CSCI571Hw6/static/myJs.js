@@ -281,7 +281,7 @@ function createTable(data) {
 }
 
 function businessDetail() {
-    let url = new URL("http://127.0.0.1:8080/businessDetailYelpRequest?");
+    let url = new URL("https://hw6cs571-364019.uw.r.appspot.com/businessDetailYelpRequest?");
     let name = this.id;
     console.log(name);
     url = url + "id=" + name;
