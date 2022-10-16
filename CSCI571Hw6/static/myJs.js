@@ -48,7 +48,7 @@ function searchYelp() {
         let geo_url = new URL("https://ipinfo.io/");
         geo_url += ("?token=") + my_token;
         console.log(geo_url);
-        let url = new URL("http://127.0.0.1:8080/yelpRequest?");
+        let url = new URL("https://hw6cs571-364019.uw.r.appspot.com//yelpRequest?");
         url += ("term=") + keyWord;
         url += ("&categories=") + category;
         url += ("&distance=") + distance * 1609.34;
@@ -86,12 +86,12 @@ function searchYelp() {
             }
             locationString = locationString.slice(0, -1);
             console.log(locationString);
-            let googleUrl = new URL("http://127.0.0.1:8080/geocoding?");
+            let googleUrl = new URL("https://hw6cs571-364019.uw.r.appspot.com//geocoding?");
             googleUrl = googleUrl + "address=" + locationString + "&key=" + google_api_key;
             console.log(googleUrl);
 
             // send request to the backend.
-            let url = new URL("http://127.0.0.1:8080/yelpRequest?");
+            let url = new URL("https://hw6cs571-364019.uw.r.appspot.com//yelpRequest?");
             //https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=NYC&categories=bars&open_now=true$limit=40&offset=40
             url += ("term=") + keyWord;
             url += ("&categories=") + category;
