@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <mat-form-field class="example-full-width">
+      <input matInput  [(ngModel)]="selectedMovie" [matAutocomplete]="auto"
+        [formControl]="searchMoviesCtrl" id="keyWord">
+      <mat-autocomplete [panelWidth]="400" #auto="matAutocomplete" (optionSelected)="onSelected()"
+        [displayWith]="displayWith">
+        <mat-option *ngIf="isLoading" class="is-loading">Loading...</mat-option>
+        <ng-container *ngIf="!isLoading">
+          <mat-option *ngFor="let cate of autoCate" [value]="cate">
+            <span><b>{{cate.title}}</b></span>
+          </mat-option>
+          <mat-option *ngFor="let term of autoTerms" [value]="term">
+            <span><b>{{term.text}}</b></span>
+          </mat-option>
+        </ng-container>
+      </mat-autocomplete>
+    </mat-form-field>
+</div>

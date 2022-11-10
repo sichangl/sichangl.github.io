@@ -1,0 +1,8 @@
+body {
+    background-image: url(./search/city.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height:150vh
+}
+

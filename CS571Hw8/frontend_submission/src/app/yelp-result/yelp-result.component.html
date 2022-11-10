@@ -1,0 +1,95 @@
+
+           <mat-tab label="Business details">
+                <div>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12" style="text-align:center">
+                            <div>Address</div>
+                            <div>{{businessDetail.location.display_address}}</div>
+                        </div>
+                        <div class="col-md-6 col-xs-12" style="text-align:center">
+                            <div>Category</div>
+                            <div>{{category}}</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12" style="text-align:center">
+                            <div>Phone</div>
+                            <div>{{businessDetail.display_phone}}</div>
+                        </div>
+                        <div class="col-md-6 col-xs-12" style="text-align:center">
+                            <div>Price range</div>
+                            <div>{{businessDetail.Price}}</div>
+                        </div>                           
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12" style="text-align:center">
+                            <div>Status</div>
+                            <div>{{businessDetail.Price}}</div>
+                        </div>   
+                    </div>
+
+                </div>
+
+   
+
+   
+   
+   <!-- <table class="table table-striped" id="yelpTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Image</th>
+                <th>Business Name</th>
+                <th>Rating</th>
+                <th>Distance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container  *ngFor="let yelpResult of yelpReturnedData;let i=index">
+                    <tr *ngIf="i<10" (click) = "onClickRow()" class="col-12">
+                        <td class="col-3">{{i + 1}}</td>
+                        <td class="col-3"><img src={{yelpResult.image_url}} alt=""></td>
+                        <td class="col-3">{{yelpResult.name}}</td>
+                        <td class="col-3">{{yelpResult.rating}}</td>
+                        <td class="col-3">{{(yelpResult.distance/1609.34).toFixed(0)}</td>
+                    </tr>
+              </ng-container>
+               <tr class="row">
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+              </tr> 
+
+        </tbody>
+    </table>-->
+
+
+
+<!-- <div class="yelpResult">
+    <table class="yelpTable" border="1" id="resultTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Image</th>
+                <th>Business Name</th>
+                <th>Rating</th>
+                <th>Distance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container  *ngFor="let yelpResult of yelpReturnedData;let i=index">
+                    <tr *ngIf="i<10" (click) = "onClickRow()">
+                        <td>{{i + 1}}</td>
+                        <td><img src={{yelpResult.image_url}} alt=""></td>
+                        <td>{{yelpResult.name}}</td>
+                        <td>{{yelpResult.rating}}</td>
+                        <td>{{yelpResult.distance}}</td>
+                    </tr>
+              </ng-container>
+        </tbody>
+    </table>
+</div> --> -->

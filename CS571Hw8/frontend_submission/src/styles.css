@@ -1,0 +1,43 @@
+
+.mat-tab-label-container{
+    background:#FFC107;
+    color: blue;
+    width: 60px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+
+html, body { height: 100%; }
+body { 
+    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.my-google-map .map-container{
+      width: 1054px;
+      height: 600px;
+      text-align: center;
+}
+
+.my-google-map {
+    text-align: center;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #3f51b5;
+}
+
+.mat-tab-body-content {
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+}
+
+/* body {
+    background-image: url(./assets/city.png); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: 100%; 
+    background: fixed;
+    height: 100vh;
+} */

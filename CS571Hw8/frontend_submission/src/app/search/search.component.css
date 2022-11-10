@@ -1,0 +1,163 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+ /* .container {
+    width: 600px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}  */
+
+#content {
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid gray;
+}
+
+.yelpTable {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+.modal-content {
+    background-color: red;
+}
+
+button.sub {
+    background-color: red;
+}
+
+button.clr {
+    background-color: blue; 
+}
+
+button.sub:hover{
+    cursor: pointer;
+    background-color: crimson;
+    color:black;
+}
+
+button.clr:hover {
+    cursor: pointer;
+    background-color:darkblue;
+}
+/* .container .title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.content {
+    padding-left: 50px;
+    font-size: 15px;
+}
+
+.content .keyWord {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.content .redStar {
+    color: red;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.content .enterKeyWord {
+    width: 500px;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.content .distance {
+    width: 270px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.content .category {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.content .enterDistanceDiv {
+    width: 270px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.content .enterDistanceDiv .enterDistance {
+    height: 23px;
+    border-radius: 5px;
+}
+
+.content .categoryDiv {
+    display: inline-block;
+    width: 220px;
+    height: 29px;
+    margin-bottom: 4px;
+}
+
+.content .categoryDiv #sel {
+    height: 29px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.content .location {
+    display: inline-block;
+}
+
+.content .enterLocation {
+
+    border-radius: 4px;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+
+.container .clickButton {
+    margin: 0 auto;
+    width: 200px;
+    padding-top: 20px;
+}
+
+.clickButton .submit {
+    border-radius: 10px;
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+.clickButton .clear {
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 60px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.clickButton .submit:hover {
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.clickButton .clear:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.resultComponent {
+    display: flex;
+    justify-content: center;
+} */
