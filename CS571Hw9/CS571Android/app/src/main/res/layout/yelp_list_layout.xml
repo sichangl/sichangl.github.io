@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:id="@+id/displayIndex"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/displayUrl"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/yelp_logo" />
+
+        <TextView
+            android:id="@+id/displayName"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:text="businessName" />
+
+        <TextView
+            android:id="@+id/displayRating"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginLeft="200dp"
+            android:text="Rating" />
+
+        <TextView
+            android:id="@+id/displayDistance"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginLeft="300dp"
+            android:text="distance" />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="55dp"
+            android:background="@android:color/black">
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/displayIndex"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:text="1"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/displayUrl"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginLeft="10dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/displayName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:text="3"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/displayRating"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:text="4"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/displayDistance"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:text="5"/>-->
+
+
+<!--</LinearLayout>-->
+<!--</LinearLayout>-->

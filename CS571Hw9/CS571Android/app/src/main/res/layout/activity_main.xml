@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- AppBar layout for using Toolbar as AppBar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- ToolBar widget -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/myToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Yelp"
+                app:titleTextColor="@color/white" />
+
+            <!-- Right most ImageView -->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/reservation" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- TextView of the Activity -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30dp" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/keyWord"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:inputType="text"-->
+<!--        android:textColorHint="#ff0000"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/title"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"/>-->
+
+    <AutoCompleteTextView
+        android:id="@+id/keyWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/keyWord"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="#ff1493"
+            android:textSize="20dp"
+            app:layout_constraintTop_toBottomOf="@id/distance"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:entries="@array/category_array"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/category"
+            app:layout_constraintTop_toBottomOf="@id/category" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginEnd="16dp"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@id/category_spinner"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/simpleCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="212dp"
+            android:buttonTint="#ff1493"
+            android:text="@string/checkBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/location" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="228dp"
+            android:text="@string/submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/simpleCheckBox" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="80dp"
+            android:text="@string/clear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/simpleCheckBox" />
+
+        <TextView
+            android:id="@+id/showResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Results"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/clear"
+            app:layout_constraintStart_toStartOf="@id/clear"/>
+
+        <TextView
+            android:id="@+id/noResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Results Found!"
+            android:textSize="15dp"
+            android:textColor= "#ff0000"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/showResult"
+            app:layout_constraintStart_toStartOf="@id/showResult"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/yelpRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/showResult"
+            app:layout_constraintStart_toStartOf="@id/showResult"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

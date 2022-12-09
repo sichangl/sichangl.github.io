@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/reservationForm">
+
+    <TextView
+        android:id="@+id/reservationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sushi Hon"
+        android:textSize="25sp"
+        android:textColor="#ff0000"/>
+
+    <TextView
+        android:id="@+id/reserveEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="15dp"
+        android:textColor="#ff0000"/>
+
+    <EditText
+        android:id="@+id/reserveEmailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/reserveDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="15dp"
+        android:textColor="#ff0000"/>
+
+    <EditText
+        android:id="@+id/reserveDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mm-dd-yyyy"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/reserveTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Time"
+        android:textSize="15dp"
+        android:textColor="#ff0000"/>
+
+    <EditText
+        android:id="@+id/reserveTimeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="hh:mm"
+        android:inputType="textEmailAddress"/>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="right">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/reserveClear"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:background="#00000000"-->
+<!--            android:text="CANCEL"-->
+<!--            android:textColor="#ff0000"/>-->
+
+<!--        <Button-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:id="@+id/reserveSubmit"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="SUBMIT"-->
+<!--            android:textColor="#ff0000"-->
+<!--            android:background="#00000000"/>-->
+
+<!--    </LinearLayout>-->
+
+
+</LinearLayout>

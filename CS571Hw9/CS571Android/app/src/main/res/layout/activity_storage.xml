@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myStorage"
+    tools:context=".StorageActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/storageBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- back arrow-->
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="360dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/backarrow" />
+
+            <!-- ToolBar widget -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/storageToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintStart_toEndOf="@id/back"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Yelp"
+                app:titleTextColor="@color/white" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/noBookingsFound"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintTop_toBottomOf="@id/storageBarLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="#ff0000"
+            android:text="No Bookings Found!"
+            android:visibility="invisible"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/storageRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/storageBarLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/index1"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:text="1"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15dp"-->
+<!--        android:gravity="center"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/storageBarLayout"-->
+<!--        app:layout_constraintStart_toStartOf="@id/storageBarLayout"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/name1"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:text="name1"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15dp"-->
+<!--        android:gravity="center"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/storageBarLayout"-->
+<!--        app:layout_constraintStart_toEndOf="@id/index1"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/date1"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:text="date1"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15dp"-->
+<!--        android:gravity="center"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/storageBarLayout"-->
+<!--        app:layout_constraintStart_toEndOf="@id/name1"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/time1"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:text="time1"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15dp"-->
+<!--        android:gravity="center"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/storageBarLayout"-->
+<!--        app:layout_constraintStart_toEndOf="@id/date1"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/email1"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:text="1374479098@qq.com"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15dp"-->
+<!--        android:gravity="center"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/storageBarLayout"-->
+<!--        app:layout_constraintStart_toEndOf="@id/time1"/>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

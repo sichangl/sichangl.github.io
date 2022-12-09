@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myFragment.DetailFragment">
+
+<!--Line1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayLine1"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:id="@+id/detailAddress"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/detailPrice"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="80dp"
+            android:text="Price Range"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+<!--LineInfo1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:id="@+id/displayAddress"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:text="https://s3-media1.fl.yelpcdn.com/bphoto/u4KoeSUPYejKJXifXNk8Jw/o.jpg"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/displayPrice"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="80dp"
+            android:text="$$"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </LinearLayout>
+<!--Line2-->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/displayLine2"
+    android:layout_marginTop="150dp">
+
+    <TextView
+        android:id="@+id/detailPhoneNumber"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:text="Phone Number"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/detailStatus"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="16dp"
+        android:text="Status"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+</LinearLayout>
+<!--LineInfo2    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp">
+    <TextView
+        android:id="@+id/displayPhoneNumber"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:text="phone number"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/displayStatus"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="80dp"
+        android:text="status"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+    </LinearLayout>
+<!--Line3    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp">
+        <TextView
+            android:id="@+id/detailCategories"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/detailLink"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="16dp"
+            android:text="Visit Yelp For More"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+<!--LineInfo3-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp">
+        <TextView
+            android:id="@+id/displayCategory"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:text="category"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/displayLink"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="80dp"
+            android:text="@string/BusinessLink"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reserveButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="130dp"
+        android:gravity="center"
+        android:text="Reserve Now" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/detailViewPager"
+        android:layout_marginTop="500dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+</FrameLayout>
